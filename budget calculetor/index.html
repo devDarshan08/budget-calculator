@@ -1,0 +1,111 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <title>my budget</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body onload="BudgetList(),ExpenceList()" id="main">
+
+    <div class="container mt-3">
+        <h1>Budget Table</h1>
+        <div class="row">
+            <div class="col-md-4 mt-3 ">
+                <div class="ttlbgt">
+                    <label class="form-label">Total Budget:</label><br>
+                    <a id="totalBudget">0</a>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3 ">
+                <div class="ttlexpnc">
+                    <label class="form-label">Total Expence:</label><br>
+                    <a id="totalexpence">0</a>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3 ">
+                <div class="ttlavlbl">
+                    <label class="form-label">Total Available:</label><br>
+                    <a id="totalavailable">0</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mt-3">
+                <div class="input-contorl">
+                    <label> Add Budget:</label>
+                    <input type="number" class="form-control" id="inpbudget" placeholder="enter amount" required>
+                    <div id="inpbudget_error" class="error"></div>
+                </div>
+                <div class="input-contorl">
+                    <input type="text" class="form-control" id="inpbudgettitle" maxlength="50" placeholder="enter title" required>
+                    <div id="inpbudgettitle_error" class="error"></div>
+                </div>
+                <div class="col-md-1 mt-3" id="buttonbudget">
+                    <button type="submit" id="btnbudget" onclick="addNewBudget()" class="btn btn-success">Add</button><br>
+                    <button type="submit" id="btnupdatebudget" onclick="updatebudgetdata()" class="btn btn-success">update</button>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="input-contorl">
+                    <label> Add Expence:</label>
+                    <input type="number" class="form-control" id="inpexpence" placeholder="enter amount" required>
+                    <div id="inpexpence_error" class="error"></div>
+                </div>
+                <div class="input-contorl">
+                    <input type="text" class="form-control" id="inpexpencetitle" maxlength="50" placeholder="enter title" required>
+                    <div id="inpexpencetitle_error" class="error"></div>
+                </div>
+                <div class="col-md-1 mt-3" id="buttonexpence">
+                    <button type="submit" id="btnexpence" onclick="addNewExpence()" class="btn btn-danger">Add</button><br>
+                    <button type="" id="btnupdateexpence" onclick="updateexpencedata()" class="btn btn-success">update</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label class="form-label">Budget:</label>
+                <!-- <ul id="budgetvalue">
+
+                </ul> -->
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Amount</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblbudget">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Exponce:</label>
+                <!-- <ul id="exponcevalue">
+
+                </ul> -->
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Amount</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tblexponce">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

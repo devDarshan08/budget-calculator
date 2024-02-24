@@ -1,0 +1,136 @@
+body{
+   background-color: #fff8c4;
+   font-weight: bold;
+}
+
+span {
+    color: #ff0000;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+i{
+    color: #058505;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.ttlavlbl {
+    width: 70%;
+    margin: auto;
+    height: 100px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #4b9fc9;
+    padding: 14px;
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 1px 3px 5px black;
+}
+
+.ttlbgt{
+    width: 70%;
+    margin: auto;
+    height: 100px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #46c581;
+    padding: 14px;
+    float: center;
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 1px 3px 5px black;
+}
+
+.ttlexpnc{
+    width: 70%;
+    margin: auto;
+    height: 100px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fc5353;
+    padding: 14px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 1px 2px 3px black;
+}
+
+#btnbudget,
+#btnupdatebudget,
+#btnexpence,
+#btnupdateexpence{
+    margin: auto;
+    width: 100px;
+}
+
+#btnbudget:hover{
+    background-color: transparent;
+    font-size:large;
+    color:#058505 ;
+    font-weight: bold;
+    box-shadow: 1px 3px 8px black;
+}
+
+#btnexpence:hover{
+    background-color: transparent;
+    font-size:large;
+    color:#c8070a ;
+    font-weight: bold;
+    box-shadow: 1px 3px 8px black;
+}
+
+#btnupdatebudget:hover{
+    background-color: transparent;
+    font-size:large;
+    color:#058505 ;
+    font-weight: bold;
+     box-shadow: 1px 3px 8px black;
+}
+
+#btnupdateexpence:hover{
+    background-color: transparent;
+    font-size:large;
+    color:#058505 ;
+    font-weight: bold;
+     box-shadow: 1px 3px 8px black;
+}
+
+input{
+    box-shadow: 1px 2px 4px black;
+    margin-top: 12px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse:separate;
+    width: 100%;
+}
+
+table,
+td,
+th {
+    text-align: center;
+    padding: 7px;
+}
+
+th {
+    color: #fff;
+    background-color:#318aa8;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+tr:hover{
+    background-color: #c2c2c2;
+}
+
+.error {
+    color: red;
+}
+
+.err_inp {
+    border: 3px solid red !important;
+}
+
